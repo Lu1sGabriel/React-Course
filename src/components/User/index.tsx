@@ -1,16 +1,12 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
-interface UserProps {
+type UserProps = {
   name: string;
-  children?: ReactNode;
-}
+};
 
-const User = ({ name, children }: UserProps) => {
+const User = ({ name }: UserProps) => {
   return (
-    <div>
-      <p>{name}</p>
-      {children && <div>{children}</div>}
-    </div>
+    <span className="inline-block font-semibold text-indigo-600">{name}</span>
   );
 };
 
