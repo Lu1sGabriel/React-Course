@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import Menu from "@/components/Menu";
 import React from "react";
 
-const Contact: React.FC = () => {
+const Contact = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Menu></Menu>
